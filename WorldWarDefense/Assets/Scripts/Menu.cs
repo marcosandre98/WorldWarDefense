@@ -19,4 +19,16 @@ public class Menu : MonoBehaviour{
         Debug.Log("Saiu do jogo");
         Application.Quit();
     }
+
+    public void iniciarFaseEixo()
+    {
+        Debug.Log("Entrou na cena do mapa do Eixo");
+        SceneManager.LoadScene("MapaEixo");
+    }
+
+    public void iniciarFaseAliados()
+    {
+        Debug.Log("Entrou na cena do mapa dos Aliados");
+        SceneManager.LoadScene("MapaAliados");
+    }
 }

@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Opcoes.unity
     guid: ef442f9ed3789694cb38c6df3e575e91
+  - enabled: 1
+    path: Assets/Scenes/MapaEixo.unity
+    guid: 96854e196e08c144e99ef4c41b2158e3
+  - enabled: 1
+    path: Assets/Scenes/MapaAliados.unity
+    guid: 1c292e693f076d844a53ed82e6c26fa3
   m_configObjects: {}
