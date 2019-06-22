@@ -5,14 +5,18 @@ using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour{
 
-    public void jogar(){
+    public string nomeCena;
+
+    public void jogar(string MenuSecundario){
         Debug.Log("Entrou no menu secundario");
-        SceneManager.LoadScene("MenuSecundario");
+        nomeCena = "MenuSecundario";
+        StartCoroutine("Abrir");
     }
 
-    public void opcoes(){
+    public void opcoes(string Opcoes){
         Debug.Log("Entrou na cena de opções");
-        SceneManager.LoadScene("Opcoes");
+        nomeCena = "Opcoes";
+        StartCoroutine("Abrir");
     }
 
     public void sair(){
@@ -20,15 +24,23 @@ public class Menu : MonoBehaviour{
         Application.Quit();
     }
 
-    public void iniciarFaseEixo()
+    public void iniciarFaseEixo(string MapaEixo)
     {
         Debug.Log("Entrou na cena do mapa do Eixo");
-        SceneManager.LoadScene("MapaEixo");
+        nomeCena = "MapaEixo";
+        StartCoroutine("Abrir");
     }
 
-    public void iniciarFaseAliados()
+    public void iniciarFaseAliados(string MapaAliados)
     {
         Debug.Log("Entrou na cena do mapa dos Aliados");
-        SceneManager.LoadScene("MapaAliados");
+        nomeCena = "MapaAliados";
+        StartCoroutine("Abrir");
+    }
+
+    // Classe feita para ter um delay de 0.5s quando um botão for clicado
+    private IEnumerator Abrir(){
+        yield return new WaitForSeconds (0.5f);
+        SceneManager.LoadScene(nomeCena);
     }
 }
