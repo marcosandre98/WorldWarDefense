@@ -24,15 +24,13 @@ public class Menu : MonoBehaviour{
         Application.Quit();
     }
 
-    public void iniciarFaseEixo(string MapaEixo)
-    {
+    public void iniciarFaseEixo(string MapaEixo){
         Debug.Log("Entrou na cena do mapa do Eixo");
         nomeCena = "MapaEixo";
         StartCoroutine("Abrir");
     }
 
-    public void iniciarFaseAliados(string MapaAliados)
-    {
+    public void iniciarFaseAliados(string MapaAliados){
         Debug.Log("Entrou na cena do mapa dos Aliados");
         nomeCena = "MapaAliados";
         StartCoroutine("Abrir");
@@ -42,5 +40,9 @@ public class Menu : MonoBehaviour{
     private IEnumerator Abrir(){
         yield return new WaitForSeconds (0.5f);
         SceneManager.LoadScene(nomeCena);
+    }
+
+    public void SetVolume (float volume){
+        Debug.Log(volume);
     }
 }
