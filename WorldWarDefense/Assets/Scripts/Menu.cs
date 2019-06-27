@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Audio;
 
 public class Menu : MonoBehaviour{
 
     public string nomeCena;
+    public AudioMixer audioMixer;
 
     public void jogar(string MenuSecundario){
         Debug.Log("Entrou no menu secundario");
@@ -43,6 +45,6 @@ public class Menu : MonoBehaviour{
     }
 
     public void SetVolume (float volume){
-        Debug.Log(volume);
+        audioMixer.SetFloat("volume", volume);
     }
 }
