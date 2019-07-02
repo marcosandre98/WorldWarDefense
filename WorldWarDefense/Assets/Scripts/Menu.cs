@@ -26,6 +26,13 @@ public class Menu : MonoBehaviour{
         Application.Quit();
     }
 
+    public void iniciarCutscene(string CutsceneInicial)
+    {
+        Debug.Log("Entrou na cutscene incial");
+        nomeCena = "CutsceneInicial";
+        StartCoroutine("Abrir");
+    }
+
     public void iniciarFaseEixo(string MapaEixo){
         Debug.Log("Entrou na cena do mapa do Eixo");
         nomeCena = "MapaEixo";

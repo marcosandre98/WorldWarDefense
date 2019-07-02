@@ -12,12 +12,15 @@ EditorBuildSettings:
     path: Assets/Scenes/MenuSecundario.unity
     guid: 3d41be11f44fcc5438b27a6386040079
   - enabled: 1
-    path: Assets/Scenes/Opcoes.unity
-    guid: ef442f9ed3789694cb38c6df3e575e91
+    path: Assets/Scenes/CutsceneInicial.unity
+    guid: d12a94c777d47e340a333c0d16c76884
   - enabled: 1
     path: Assets/Scenes/MapaEixo.unity
     guid: 96854e196e08c144e99ef4c41b2158e3
   - enabled: 1
     path: Assets/Scenes/MapaAliados.unity
     guid: 1c292e693f076d844a53ed82e6c26fa3
+  - enabled: 1
+    path: Assets/Scenes/CutsceneFinal.unity
+    guid: d788a52d8d292794594b4e4629bc793a
   m_configObjects: {}
