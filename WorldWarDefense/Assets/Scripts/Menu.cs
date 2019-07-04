@@ -7,6 +7,7 @@ using UnityEngine.Audio;
 public class Menu : MonoBehaviour{
 
     public string nomeCena;
+    public string nomeTexto;
     public AudioMixer audioMixer;
 
     public void jogar(string MenuSecundario){
@@ -42,6 +43,13 @@ public class Menu : MonoBehaviour{
     public void iniciarFaseAliados(string MapaAliados){
         Debug.Log("Entrou na cena do mapa dos Aliados");
         nomeCena = "MapaAliados";
+        StartCoroutine("Abrir");
+    }
+
+    public void voltarMenu(string Menu)
+    {
+        Debug.Log("Entrou no Menu");
+        nomeCena = "Menu";
         StartCoroutine("Abrir");
     }
 
