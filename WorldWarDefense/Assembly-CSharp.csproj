@@ -57,6 +57,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\Character.cs" />
      <Compile Include="Assets\Scripts\Menu.cs" />
+     <Compile Include="Assets\Scripts\WaveSpawner.cs" />
      <Compile Include="Assets\Scripts\Waypoints.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
