@@ -58,7 +58,6 @@ public class Turret : MonoBehaviour{
 
         if(fireCountdown <= 0f){
             Shoot();
-            Debug.Log("chamou o shoot aqui");
             fireCountdown = 1f / fireRate;
         }
         fireCountdown -= Time.deltaTime;
