@@ -28,6 +28,7 @@ public class Bullet : MonoBehaviour{
  
     void HitTarget(){
         Destroy(gameObject);
+        PlayerStats.Money = PlayerStats.Money + 5;
         Destroy(target.gameObject);
     }
 }

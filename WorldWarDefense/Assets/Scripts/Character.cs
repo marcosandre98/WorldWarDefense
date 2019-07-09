@@ -25,6 +25,7 @@ public class Character : MonoBehaviour{
             if(waypointIndex < Wpoints.waypoints.Length - 1){
                 waypointIndex++;
             }else{
+                PlayerStats.Lives--;
                 Destroy(gameObject);
             }
         }

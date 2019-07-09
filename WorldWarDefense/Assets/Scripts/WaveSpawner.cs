@@ -18,6 +18,7 @@ public class WaveSpawner : MonoBehaviour{
         }
 
         countdown -= Time.deltaTime;
+        
     }
 
     IEnumerator SpawnWave(){

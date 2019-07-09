@@ -46,8 +46,7 @@ public class Menu : MonoBehaviour{
         StartCoroutine("Abrir");
     }
 
-    public void voltarMenu(string Menu)
-    {
+    public void voltarMenu(string Menu){
         Debug.Log("Entrou no Menu");
         nomeCena = "Menu";
         StartCoroutine("Abrir");
